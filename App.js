@@ -6,6 +6,7 @@ git commit -m "Create App.js and initialize board renderer"
 git branch
 git log --oneline
 git log --oneline
+git status
 
 
 
