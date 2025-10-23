@@ -38,3 +38,9 @@ touch src/App.js
 cd ~/Cognition-board-ui
 mkdir -p src/canvas src/components src/engine src/styles
 touch src/App.js src/canvas/BoardRenderer.js index.html README.md
+git init
+git add .
+git commit -m "Initial scaffold for cognition board UI"
+git branch -M main
+git remote add origin https://github.com/YOUR_USERNAME/Cognition-board-ui.git
+git push -u origin main
