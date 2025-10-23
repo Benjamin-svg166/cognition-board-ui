@@ -47,3 +47,5 @@ git push -u origin main
 git remote set-url origin https://github.com/Benjamin-svg166/Cognition-board-ui.git
 git remote -v
 git remote -v
+git remote set-url origin https://github.com/Benjamin-svg166/Cognition-board-ui.git
+
