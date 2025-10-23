@@ -33,3 +33,5 @@ function drawBoard(ctx, label) {
   ctx.fillText(label, 10, 390);
 }                                                                                                                                                                                                           
 cd ~/Cognition-board-ui
+mkdir -p src
+touch src/App.js
