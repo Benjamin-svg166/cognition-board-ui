@@ -35,3 +35,4 @@ function drawBoard(ctx, label) {
 cd ~/Cognition-board-ui
 mkdir -p src
 touch src/App.js
+cd ~/Cognition-board-ui
