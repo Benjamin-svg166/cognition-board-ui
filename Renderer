@@ -50,6 +50,6 @@ git remote -v
 git remote set-url origin https://github.com/Benjamin-svg166/Cognition-board-ui.git
 git remote -v
 git commit-m "Your message"
-
+git commit -m Initial scaffold for cognition board UI
 
 
