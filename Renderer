@@ -1,1 +1,2 @@
-
+mkdir -p src/canvas
+touch src/canvas/BoardRenderer.js
