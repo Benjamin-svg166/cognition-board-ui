@@ -32,3 +32,4 @@ function drawBoard(ctx, label) {
   ctx.font = '16px sans-serif';
   ctx.fillText(label, 10, 390);
 }                                                                                                                                                                                                           
+cd ~/Cognition-board-ui
