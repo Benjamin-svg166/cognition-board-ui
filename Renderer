@@ -51,5 +51,7 @@ git remote set-url origin https://github.com/Benjamin-svg166/Cognition-board-ui.
 git remote -v
 git commit-m "Your message"
 git commit -m Initial scaffold for cognition board UI
+git commit -m Add BoardRenderer.js for layered canvas rendering
+
 
 
