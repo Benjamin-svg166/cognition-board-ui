@@ -36,3 +36,5 @@ cd ~/Cognition-board-ui
 mkdir -p src
 touch src/App.js
 cd ~/Cognition-board-ui
+mkdir -p src/canvas src/components src/engine src/styles
+touch src/App.js src/canvas/BoardRenderer.js index.html README.md
