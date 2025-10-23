@@ -8,6 +8,7 @@ git log --oneline
 git log --oneline
 git status
 git status
+git branch
 
 
 
