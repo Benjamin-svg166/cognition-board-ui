@@ -7,6 +7,7 @@ git push
 function BoardRenderer() {
   return <canvas id="cognition-board" width="800" height="800"></canvas>;
 }
+npm start
 
 
 
