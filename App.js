@@ -1,14 +1,15 @@
-import BoardRenderer from './BoardRenderer';
+import { useEffect } from 'react';
+import { initBoardRenderer } from './canvas/BoardRenderer';
 
-function App() {
-  return (
-    <div className="App">
-      <BoardRenderer />
-    </div>
-  );
+function BoardRenderer() {
+  useEffect(() => {
+    initBoardRenderer('board-container');
+  }, []);
+
+  return <div id="board-container" style={{ position: 'relative' }} />;
 }
 
-export default App;
+export default BoardRenderer;
 
 
 
