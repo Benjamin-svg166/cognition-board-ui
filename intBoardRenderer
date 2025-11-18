@@ -1,0 +1,30 @@
+export function initBoardRenderer(containerId) {
+  console.log('initBoardRenderer called');
+
+  const container = document.getElementById(containerId);
+  if (!container) {
+    console.warn('Container not found');
+    return;
+  }
+  if (container.querySelector('#layer-0')) {
+    console.log('Canvas already initialized');
+    return;
+  }
+
+  console.log('Creating canvas layers...');
+  for (let i = 0; i < 3; i++) {
+    const canvas = document.createElement('canvas');
+    canvas.id = `layer-${i}`;
+    canvas.width = 600;
+    canvas.height = 600;
+    canvas.style.position = 'absolute';
+    canvas.style.zIndex = i;
+    container.appendChild(canvas);
+
+    const ctx = canvas.getContext('2d');
+    ctx.fillStyle = 'white';
+    ctx.fillRect(0, 0, canvas.width, canvas.height);
+    ctx.fillStyle = 'black';
+    ctx.fillText(`Layer ${i}`, 10, 20);
+  }
+}

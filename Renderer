@@ -1,0 +1,57 @@
+mkdir -p src/canvas
+touch src/canvas/BoardRenderer.js
+// src/canvas/BoardRenderer.js
+export function initBoardRenderer(containerId) {
+  const container = document.getElementById(containerId);
+  const layers = ['Layer 0', 'Layer 1', 'Layer 2'];
+
+  layers.forEach((label, i) => {
+    const canvas = document.createElement('canvas');
+    canvas.width = 400;
+    canvas.height = 400;
+    canvas.style.position = 'absolute';
+    canvas.style.top = `${i * 420}px`;
+    canvas.style.border = '1px solid #333';
+    canvas.id = `board-layer-${i}`;
+    container.appendChild(canvas);
+
+    const ctx = canvas.getContext('2d');
+    drawBoard(ctx, label);
+  });
+}
+
+function drawBoard(ctx, label) {
+  const size = 50;
+  for (let y = 0; y < 8; y++) {
+    for (let x = 0; x < 8; x++) {
+      ctx.fillStyle = (x + y) % 2 === 0 ? '#eee' : '#444';
+      ctx.fillRect(x * size, y * size, size, size);
+    }
+  }
+  ctx.fillStyle = 'black';
+  ctx.font = '16px sans-serif';
+  ctx.fillText(label, 10, 390);
+}                                                                                                                                                                                                           
+cd ~/Cognition-board-ui
+mkdir -p src
+touch src/App.js
+cd ~/Cognition-board-ui
+mkdir -p src/canvas src/components src/engine src/styles
+touch src/App.js src/canvas/BoardRenderer.js index.html README.md
+git init
+git add .
+git commit -m "Initial scaffold for cognition board UI"
+git branch -M main
+git remote add origin https://github.com/YOUR_USERNAME/Cognition-board-ui.git
+git push -u origin main
+git remote set-url origin https://github.com/Benjamin-svg166/Cognition-board-ui.git
+git remote -v
+git remote -v
+git remote set-url origin https://github.com/Benjamin-svg166/Cognition-board-ui.git
+git remote -v
+git commit-m "Your message"
+git commit -m Initial scaffold for cognition board UI
+git commit -m Add BoardRenderer.js for layered canvas rendering
+
+
+
