@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
@@ -121,10 +121,4 @@ touch README.md                                                              Cog
 ├── public/
 ├── src/
 │   ├── canvas/
-│   ├── components/
-│   ├── engine/
-│   ├── styles/
-│   └── App.js
-├── index.html
-└── README.md 
->>>>>>> 6356ec0ecf3fcfa3aab829e630ff5c8651517fd3
+│   ├── component
