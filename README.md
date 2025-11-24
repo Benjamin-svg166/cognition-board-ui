@@ -121,4 +121,24 @@ touch README.md                                                              Cog
 ├── public/
 ├── src/
 │   ├── canvas/
-│   ├── component
+│   ├── component                                                                        # Cognition Board UI
+
+An immersive visualization project designed to render dynamic cognition pulses across a board.  
+This project uses **React** and **Canvas/WebGL** techniques to simulate activity, collisions, and adaptive behaviors.  
+Includes a modular **DebugHUD** overlay for live stats (pulse count, collisions, FPS).
+
+---
+
+## 🚀 Getting Started
+
+### Prerequisites
+- [Node.js](https://nodejs.org/) (v18+ recommended)
+- [npm](https://www.npmjs.com/) or [yarn](https://yarnpkg.com/)
+
+### Installation
+Clone the repository and install dependencies:
+
+```bash
+git clone https://github.com/Benjamin-svg166/cognition-board-ui.git
+cd cognition-board-ui
+npm install

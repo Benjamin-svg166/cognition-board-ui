@@ -234,7 +234,7 @@ const BoardRenderer = () => {
         {debugMode ? 'Disable Debug' : 'Enable Debug'}
       </button>
     </div>
-  </div>
+  </div>  
 );
 };
 
